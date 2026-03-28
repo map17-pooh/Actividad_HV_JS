@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Fondo desenfocado */
+.fondo {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #4F8FBF, #A7C7E7);
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.fondo::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Contenedor principal */
+.contenedor {
+    background-color: rgba(255, 255, 255, 0.92);
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 900px;
+}
+
+/* Encabezado */
+.encabezado {
+    width: 100%;
+    background-color: #2E6F95;
+    color: white;
+    border-radius: 10px;
+}
+
+/* Información */
+.info {
+    padding: 20px;
+}
+
+/* Foto */
+.foto {
+    text-align: right;
+    padding: 20px;
+}
+
+.foto img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+    object-fit: cover;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #2E6F95;
+    border-bottom: 2px solid #2E6F95;
+    padding-bottom: 5px;
+    cursor: pointer; /* Para interacción JS */
+}
+
+/* Texto */
+p, li {
+    line-height: 1.6;
+}
+
+/* Listas */
+ul {
+    margin-left: 20px;
+}
+
+/* Nota final */
+.nota {
+    text-align: center;
+    font-style: italic;
+}
